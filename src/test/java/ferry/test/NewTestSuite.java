@@ -27,7 +27,7 @@ public class NewTestSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        FerryManagerHolder.manager = new FerryAdminManager();
+       FerryManagerHolder.manager = new FerryAdminManager();
         System.out.println("Manager: " + FerryManagerHolder.manager.showFerries());
     }
 
