@@ -27,6 +27,8 @@ public class NewTestSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+        FerryManagerHolder.manager = new FerryAdminManager();
+        System.out.println("Manager: " + FerryManagerHolder.manager.showFerries());
     }
 
     @AfterClass
@@ -35,12 +37,10 @@ public class NewTestSuite {
 
     @Before
     public void setUp() throws Exception {
-       //FerryManagerHolder.manager = new FerryAdminManager();
     }
 
     @After
     public void tearDown() throws Exception {
-        FerryManagerHolder.manager = new FerryAdminManager();
     }
     
 }
